@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Event Engine Setup</title>
+    <link>/ee/</link>
+    <description>Recent content on Event Engine Setup</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ee</language>
+    <atom:link href="/ee/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AWS Event Engine</title>
+      <link>/ee/2_labs/21_awseventengine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/ee/2_labs/21_awseventengine.html</guid>
+      <description>AWS Event Engine Attending an AWS hosted event To complete this workshop, you will be provided with an AWS account via the AWS Event Engine service. The AWS staff will send an Event Engine dashboard link with a hash parameter, please follow the below instructions on how to get access into your account.
+If you are currently logged in to an AWS Account, you can log out using this link (https://aws.</description>
+    </item>
+    <item>
+      <title>Partner Setup Instructions</title>
+      <link>/ee/3_modulethree/31_partnersetup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/ee/3_modulethree/31_partnersetup.html</guid>
+      <description>Partner Setup Instructions Submodule One Heading This paragraph block should be an introduction to the submodule.
+Submodule One Subheading This paragraph block should be utilized to start the submodule. Next Section OR Conclusion Heading This paragraph block can be utilized to lead into the next section of the workshop (which might be a conclusion) or be a conclusion itself.
+Example Guidance Content Below Do you require attendees to sign up for things?</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gloo Platform EKS Workshop on English</title>
+    <link>/</link>
+    <description>Recent content in Gloo Platform EKS Workshop on English</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Partner Setup Instructions</title>
+      <link>/3_modulethree/31_partnersetup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/3_modulethree/31_partnersetup.html</guid>
+      <description>Partner Setup Instructions Submodule One Heading This paragraph block should be an introduction to the submodule.
+Submodule One Subheading This paragraph block should be utilized to start the submodule. Next Section OR Conclusion Heading This paragraph block can be utilized to lead into the next section of the workshop (which might be a conclusion) or be a conclusion itself.
+Example Guidance Content Below Do you require attendees to sign up for things?</description>
+    </item>
+    <item>
+      <title>Self-Guided Setup Instructions</title>
+      <link>/2_labs/21_awsaccountsetup.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/2_labs/21_awsaccountsetup.html</guid>
+      <description>AWS Account Setup Submodule One Heading This paragraph block can be used to explain how to setup an AWS account. Example content guidance can be found at the bottom of the page.
+Next Section Heading This paragraph block can optionally be utilized to lead into the next section of the workshop.
+Example Content Guidance Setting up your AWS account If you don’t already have an AWS account with Administrator access: create one now by clicking here.</description>
+    </item>
+    <item>
+      <title>Create a Workspace</title>
+      <link>/2_labs/22_createaworkspace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/2_labs/22_createaworkspace.html</guid>
+      <description>Set Up The Workspace Submodule Two Heading This paragraph block can be used to explain how to create a workspace if necessary. Example content guidance can be found at the bottom of the page.
+Next Section Heading This paragraph block can optionally be utilized to lead into the next section of the workshop.
+Example Content Guidance Set Up Your Workspace AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser.</description>
+    </item>
+    <item>
+      <title>Create an IAM Role for your workspace</title>
+      <link>/2_labs/23_createaniamroleforyourworkspace.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/2_labs/23_createaniamroleforyourworkspace.html</guid>
+      <description>Create an IAM Role for your workspace Submodule Three Heading This paragraph block can be used to explain how to create a workspace if necessary. Example content guidance can be found at the bottom of the page.
+Next Section Heading This paragraph block can optionally be utilized to lead into the next section of the workshop.
+Example Content Guidance Create an IAM Role for your workspace Info: Starting from here, when you see command to be entered such as below, you will enter these commands into Cloud9 IDE.</description>
+    </item>
+    <item>
+      <title>Attach IAM Role</title>
+      <link>/2_labs/24_attachiamrole.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/2_labs/24_attachiamrole.html</guid>
+      <description>Attaching an IAM Role Submodule Four Heading This paragraph block can be used to explain how to attach an IAM role if necessary. Example content guidance can be found at the bottom of the page.
+Next Section Heading This paragraph block can optionally be utilized to lead into the next section of the workshop.
+Example Content Guidance Attach the IAM role to your instance Will need
+Follow this deep link to find your Cloud9 EC2 instance (https://console.</description>
+    </item>
+    <item>
+      <title>Configure workshop specific requirements</title>
+      <link>/2_labs/25_configureworkshopspecificrequirements.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/2_labs/25_configureworkshopspecificrequirements.html</guid>
+      <description>Configuring Workshop Specific Requirements Submodule Five Heading This paragraph block can be used to explain how to configure any specific workshop requirements if necessary. Example content guidance can be found at the bottom of the page.
+Next Section Heading This paragraph block can optionally be utilized to lead into the next section of the workshop.
+Example Content Guidance Configure Workspace Return to your workspace and click the gear icon (in top right corner), or click to open a new tab and choose “Open Preferences” Select AWS SETTINGS and turn off AWS managed temporary credentials Close the Preferences tab Turn off temp credentials</description>
+    </item>
+  </channel>
+</rss>
