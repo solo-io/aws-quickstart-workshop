@@ -30,7 +30,7 @@ Lets enforce a **Zero Trust** networking approach where all inbound traffic to a
     EOF
     ```
 
-2. Refresh the Online Boutique webpage (**echo http://$GLOO_GATEWAY**). You should see an error with message "RBAC: access denied"
+2. Refresh the Online Boutique webpage (**echo http://$GLOO_GATEWAY**). You should see an error with message **"RBAC: access denied"**
 
 3. Add AccessPolicy to explicitly allow traffic between the gateway and the frontend application:
 
@@ -50,7 +50,8 @@ Lets enforce a **Zero Trust** networking approach where all inbound traffic to a
         authz:
           allowedClients:
           - serviceAccountSelector:
-              name: istio-ingressgateway-1-18-2-service-account
+              labels:
+                app: istio-ingressgateway
               namespace: gloo-mesh-gateways
     EOF
     ```
@@ -75,3 +76,7 @@ Lets enforce a **Zero Trust** networking approach where all inbound traffic to a
               namespace: online-boutique
     EOF
     ```
+4. Refresh the page (**echo http://$GLOO_GATEWAY**) again. You should get the store home page back.
+
+This Lab in this Gloo Platform EKS Workshop effectively implemented a Zero Trust network security model, where we began by denying all inbound traffic by default. Through careful configuration of AccessPolicy rules, we selectively allowed necessary communication between the gateway, the frontend, and other microservices within the online-boutique workspace. This approach not only bolstered our network's security but also demonstrated the practicality and flexibility of Zero Trust principles in a cloud-native ecosystem.
+

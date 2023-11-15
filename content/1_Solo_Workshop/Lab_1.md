@@ -44,7 +44,37 @@ Gloo Platform provides a management plane to interact with the service mesh and 
 
     ![](/images/dashboard-1.png)
 
-6. Wait for the Gloo Gateway Service to become ready and set it's IP address to a variable for us to use later:
+6. As you might notice there is no Workspaces created yet. Lets create **Global Workspace** in the case of this Lab to simplify the deployment lets include all services within the same workspace. This means that they all share the same service discovery policies and security. This is only recommended for this workshop to allow beginners learning Gloo Mesh.
+
+    ```yaml
+    kubectl apply -f - <<EOF
+    apiVersion: admin.gloo.solo.io/v2
+    kind: Workspace
+    metadata:
+      name: global-workspace
+      namespace: gloo-mesh
+    spec:
+      workloadClusters:
+      - name: '*'            # all namespaces in all clusters
+        namespaces:
+        - name: '*'
+    ---
+    apiVersion: admin.gloo.solo.io/v2
+    kind: WorkspaceSettings
+    metadata:
+      name: global-settings
+      namespace: gloo-mesh
+    spec:
+      exportTo:
+      - workspaces:
+        - name: global-workspace
+        resources:
+        - kind: SERVICE
+          namespace: gloo-mesh-gateways
+    EOF
+    ```
+
+7. Wait for the Gloo Gateway Service to become ready and set it's IP address to a variable for us to use later:
 
     ```sh
     export GLOO_GATEWAY=$(kubectl -n gloo-mesh-gateways get svc istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].*}')
@@ -52,3 +82,7 @@ Gloo Platform provides a management plane to interact with the service mesh and 
     ```
 
 Note: No application will respond to this address...yet!
+
+In this Lab, we have successfully set up the foundational elements of the Gloo Platform. We've installed essential components like the Gloo command line tool, established the Gloo Platform, and created a Global Workspace. This setup paves the way for deploying actual applications and managing their traffic, which will be our focus in the next lab. Remember, the structures we've put in place here are crucial for the seamless operation of more complex service mesh architectures that we will explore.
+
+As we transition to the next Lab, we will leverage this infrastructure to deploy and expose a sample application. This will not only demonstrate the practical application of our setup but also introduce us to the real-world scenarios of managing microservices traffic.

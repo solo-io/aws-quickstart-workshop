@@ -18,36 +18,6 @@ helm upgrade --install online-boutique --version "5.0.0" oci://us-central1-docke
   --namespace online-boutique
 ```
 
-**Global Workspace** In some cases it may be easier to include all services within the same workspace. This means that they all share the same service discovery policies and security. This is only recommended for this workshop to allow beginners learning Gloo Mesh.
-
-```yaml
-kubectl apply -f - <<EOF
-apiVersion: admin.gloo.solo.io/v2
-kind: Workspace
-metadata:
-  name: global-workspace
-  namespace: gloo-mesh
-spec:
-  workloadClusters:
-  - name: '*'            # all namespaces in all clusters
-    namespaces:
-    - name: '*'
----
-apiVersion: admin.gloo.solo.io/v2
-kind: WorkspaceSettings
-metadata:
-  name: global-settings
-  namespace: gloo-mesh
-spec:
-  exportTo:
-  - workspaces:
-    - name: global-workspace
-    resources:
-    - kind: SERVICE
-      namespace: gloo-mesh-gateways
-EOF
-```
-
 To capture the traffic coming to the Gateway and route them to your applications, you need to use the **VirtualGateway** and **RouteTable** resources.
 
 **VirtualGateway** represents a logical gateway configuration served by Gateway workloads. It describes a set of ports that the virtual gateway listens for incoming or outgoing HTTP/TCP connections, the type of protocol to use, SNI configuration etc.
@@ -136,3 +106,5 @@ To capture the traffic coming to the Gateway and route them to your applications
     ```
 
 ![Online Boutique](/images/online-boutique-1.png)
+
+In this lab, we successfully deployed and exposed the Online Boutique Sample Application. By utilizing the VirtualGateway and RouteTable resources, we have established a foundational understanding of how to manage traffic in a microservices architecture. This knowledge is crucial for effectively routing workloads, which is the focus of our next lab.

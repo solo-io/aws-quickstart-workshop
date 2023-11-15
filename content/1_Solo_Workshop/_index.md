@@ -12,7 +12,7 @@ In this workshop, we will deploy Gloo Platform on a single cluster and a subset 
 
 ## Prerequisites and Requirements
 
-- One EKS cluster in any region with a minimum of 2 worker nodes of size 2vCPU and 8GB memory and above
+- One EKS cluster in any region with a minimum of 3 worker nodes of size 4vCPU and 16GB memory and above
 - kubectl CLI configured to communicate with the EKS cluster
 - helm binary is present to deploy demo application
 - A basic understanding of containers and Kubernetes

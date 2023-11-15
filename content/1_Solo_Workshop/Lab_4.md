@@ -98,3 +98,11 @@ where authorization checks will be performed:
     ```sh
     curl -H "x-api-key: admin" http://$GLOO_GATEWAY/products
     ```
+
+The expected results of the executed commands are illustrated in the screenshot below:
+
+  ![Expected Output](/images/authorization_outputs.png)
+
+In ths Lab, we've taken significant steps in enhancing the security of our application by implementing API key authentication. By creating Kubernetes secrets for different user roles and setting up the ExtAuthPolicy, we've established a reliable method to secure and manage access to our services. This lab has not only highlighted the ease of setting up basic authentication but also emphasized the importance of robust security practices in microservices architectures.
+
+As we move forward, the concepts and skills we've acquired here will be crucial in understanding and implementing more comprehensive security strategies.
